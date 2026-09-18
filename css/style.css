@@ -1,0 +1,8 @@
+/* Estilo básico */
+.skip-link {
+    position: absolute;
+    left: -10000px;
+}
+.skip-link:focus {
+    position: static;
+}
