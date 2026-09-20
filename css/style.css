@@ -172,19 +172,29 @@ nav a { text-decoration: none; color: #006064; font-weight: bold; }
 
 /* Clase Grid para las imágenes */
 .skip-link {
-    position: absolute;
-    left: -9999px;
+    position: fixed;
+    left: 0;
     top: 0;
-    background: #006064;
-    color: white;
-    padding: 10px 15px;
-    z-index: 100;
+    background: rgba(255, 255, 255, 0.0);
+    color: rgba(0, 0, 0, 0.22);
+    padding: 8px 12px;
+    z-index: 2000;
     text-decoration: none;
     border-radius: 0 0 8px 0;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    pointer-events: auto;
 }
 
-.skip-link:focus {
-    left: 0;
+.skip-link:focus,
+.skip-link:focus-visible {
+    background: rgba(255, 255, 255, 0.98);
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    outline: 2px solid #00acc1;
+    outline-offset: 2px;
 }
 
 .grid {
